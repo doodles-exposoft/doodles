@@ -1,0 +1,14 @@
+////////////////////////
+GRUPO DOODLES
+
+Roberta Pires
+Gustavo Yoshio T.
+Nicolas Guilherme
+Yasmin Betas
+
+Doodles: Basicamente uma plataforma de apoio a artistas individuais para fotografias e desenhos
+digitais & físicos, sendo assim uma grande galeria de imagens.
+
+Tela 1 - Página Inicial
+Tela 2 - Página de uma foto específica selecionada
+Tela 3 - Cadastro
