@@ -9,7 +9,8 @@
   
 body{
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;}
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 
   .row img{
     border-radius: 5%; 
@@ -68,15 +69,15 @@ body{
     background-color: white;
   }
   
-.barra_azul{
-  background-color: rgb(0, 195, 255);
-  width: 100%;
-  height: 15px;
-  margin: 0;
-  padding: 0;
-}
+  .barra_azul{
+    background-color: rgb(0, 195, 255);
+    width: 100%;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+  }
 
- header {
+   header {
     background-color: whitesmoke;
     padding: 7px;
     display: block;
@@ -94,7 +95,7 @@ body{
     color: black;
     border: 1px solid grey;
     border-radius: 15px;
-    width: 135px;
+    width: 170px;
     height: 30px;
     margin: 15px;
     margin-left: 40px;
@@ -153,124 +154,214 @@ body{
 }
 
 .container_des{
-  display: block;
-  float: left;
-  font-size: 20px;
-  height: 20px;
+   display: block;
+   float: left;
+   font-size: 20px;
+   height: 20px;
  }
 
  .btn-group button {
-  background-color: white; 
-  border: 1px solid rgb(177, 177, 177); 
-  color: black; 
-  padding: 10px; 
-  cursor: pointer; 
-  width: 125px; 
-  display: block;
-  border-radius: 30px;
-  font-size: 15px;
-  margin: 5px;
+    background-color: white; 
+    border: 1px solid rgb(177, 177, 177); 
+    color: black; 
+    padding: 10px; 
+    cursor: pointer; 
+    width: 125px; 
+    display: block;
+    border-radius: 30px;
+    font-size: 15px;
+    margin: 5px;
 }
 
 .btn-group button:hover{
-  border: 1px solid rgb(0, 195, 255);
+    border: 1px solid rgb(0, 195, 255);
 }
 
 .em_alta{
-  text-align: center;
-  height: 100%;
-  margin: 10px;
+    text-align: center;
+    height: 100%;
+    margin: 10px;
 }
 
-  .container img {
-  width: 100%; 
-  padding: 30px;
+.container_gallery{
+    float: right;
+}
+
+.container img {
+    width: 100%; 
+    padding: 30px;
   }
   
-  .container{
+.container{
     display: block;
-    }
+  }
     
-    .container::after {
-      content: "";
-      clear: both;
-      display: table;  
-    }
+.container::after {
+    content: "";
+    clear: both;
+    display: table;  
+  }
   
-    div.gallery {
-      float: right;
-      margin: 5px;
-      border: 1px solid #ccc;
-      width: 300px;
-      text-align: center;
-      border-radius: 5px;
-    }
+div.gallery {
+    float: center;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
     
-    div.gallery:hover {
-      border: 1px solid rgb(0, 163, 238);
-    }
+div.gallery:hover {
+    border: 1px solid rgb(0, 163, 238);
+  }
     
-    div.gallery img {
-      float: right;
-      width: 100%;
-      height: 100%;
-    }
+div.gallery img {
+    float: right;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
   
-    div.desc {
-      padding: 15px;
-      text-align: center;
-      font-size: 20px;
-    }
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
   
-      div.gallery button{
-      background-color: rgb(19, 19, 19);
-      color: white;
-      border-radius: 30px;
-      width: 50px;
-      height: 30px;
-      font-size: 13px;
-      border: none;
-    }
+div.gallery button{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border-radius: 30px;
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+  }
 
-     div.gallery .btn_heart{
-      background-color: white;
-      color: black;
-      border-radius: 30px;
-      width: 50px;
-      height: 30px;
-      font-size: 15px;
-      border: none;
-      border: 1px solid rgb(161, 161, 161);
-    }
+a .btn-topicos{
+    text-decoration: none;
+    color: white;
+  }
 
-    div.gallery button:hover{
-      background-color: rgb(37, 37, 37) ;
-    }
+div.gallery .btn_heart{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border: 1px solid rgb(161, 161, 161);
+  }
 
-    div.gallery .btn_heart:hover{
-      background-color: rgb(206, 206, 206) ;
-    }
+div.gallery button:hover{
+    background-color: rgb(37, 37, 37) ;
+  }
 
-    .fildset{
-      float: center;
-      border: solid 1px #777;
-      border-radius: 30px;
-    }
+div.gallery .btn_heart:hover{
+    background-color: rgb(206, 206, 206) ;
+  }
 
-    .label{
-      border-radius: 30px;
-    }
 
-    .footer {
-      background-color: lightseagreen;
-      color: #ffffff;
-      text-align: center;
-      font-size: 14px;
-      padding: 10px;
-      width: 100%;
-      height: 100%;
-      border-radius: 7px;
-    }
+div.container_artist{
+    display:flex;    
+    align-items:center;
+  }
+
+div.gallery_artist {
+    border: 1px solid #ccc;
+    width: 760px;
+    text-align: center;
+    border-radius: 5px;
+    float: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+    
+div.img_artist img {
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+div.gallery_artist .first_div{
+    margin: 20px;
+    float: left;
+  }
+
+div.gallery_artist .descr_artist1 img{
+    width: 35px;
+    float: left;
+  }
+
+div.gallery_artist .descr_artist2 h2{
+    float: center;
+  }
+
+div.gallery_artist .descr_artist2 h5{
+    font-size: 15px;
+  }
+
+div.gallery_artist .descr_artist3 button{
+    background-color: rgb(0, 163, 238);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin: 20px;
+  }
+
+div.gallery_artist .descr_artist4 p{
+    margin: 35px;
+    font-size: 17px;
+  }
+
+div.gallery_artist .descr_artist4 img{
+    margin: 10px;
+    border-radius: 15px;
+    width: 80px;
+    height: 120px;
+  }
+   
+
+
+
+.fildset{
+    float: center;
+    border: solid 1px #777;
+    border-radius: 30px;
+  }
+
+.label{
+    border-radius: 30px;
+  }
+
+.footer button{
+    background-color: rgb(0, 195, 255);
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    height: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border: none;
+  }
+
+.footer {
+    background-color: lightseagreen;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  }
 
 
 
