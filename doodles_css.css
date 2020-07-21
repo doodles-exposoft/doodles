@@ -12,11 +12,11 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  .row img{
+.row img{
     border-radius: 5%; 
   }
   
-  .row::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
@@ -51,25 +51,41 @@ body{
   
   @media screen and (min-width: 600px) {
     /* Para tablets: */
-  .col-m-1 {width: 8.33%;}
-  .col-m-2 {width: 16.66%;}
-  .col-m-3 {width: 25%;}
-  .col-m-4 {width: 33.33%;}
-  .col-m-5 {width: 41.66%;}
-  .col-m-6 {width: 50%;}
-  .col-m-7 {width: 58.33%;}
-  .col-m-8 {width: 66.66%;}
-  .col-m-9 {width: 75%;}
-  .col-m-10 {width: 83.33%;}
-  .col-m-11 {width: 91.66%;}
-  .col-m-12 {width: 100%;}
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
     }
 
-  html {
+html {
     background-color: white;
   }
-  
-  .barra_azul{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ------------header----------------*/
+.barra_azul{
     background-color: rgb(0, 195, 255);
     width: 100%;
     height: 15px;
@@ -77,7 +93,7 @@ body{
     padding: 0;
   }
 
-   header {
+header {
     background-color: whitesmoke;
     padding: 7px;
     display: block;
@@ -86,36 +102,36 @@ body{
     height: 180px;
   }
   
-  .header_img{
+.header_img{
     float: left;
   }
 
-  .btn-topicos button{
+.btn-topicos button{
     background-color: whitesmoke;
     color: black;
     border: 1px solid grey;
     border-radius: 15px;
     width: 170px;
     height: 30px;
-    margin: 15px;
     margin-left: 40px;
+    cursor: pointer;
   }
 
-  .btn-topicos button:hover{
+.btn-topicos button:hover{
     border: 1px solid rgb(0, 195, 255);
   }
   
-  .topnav {
+.topnav {
     float: center;
     padding: 10px;
     margin-left: 280px;
   }
   
-  .topnav .search-container {
+.topnav .search-container {
     float: center;
   }
   
-  .topnav input[type=text] {
+.topnav input[type=text] {
     padding: 5px 10px;
     font-size: 17px;
     border: none;
@@ -124,11 +140,11 @@ body{
     width: 650px;
   }
   
-  .topnav .search-container button:hover {
+.topnav .search-container button:hover {
     background: rgb(224, 224, 19);
   }
 
-  .topnav .search-container button {
+.topnav .search-container button {
     background: rgb(255, 255, 6);
     font-size: 17px;
     color: darkslategrey;
@@ -139,28 +155,197 @@ body{
     border-radius: 7px;
   }
 
-.proflie_img{
+/*--.fav_img img{
     float: right;
     margin-right: 50px;
     cursor: pointer;
-    margin-top: 20px;
-}
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+}--*/
 
-.cart_img{
+.log_img img{
     float: left;
-    margin-left: 850px;
+    margin-left: 950px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
 }
 
-.container_des{
-   display: block;
-   float: left;
-   font-size: 20px;
-   height: 20px;
- }
+a .btn-topicos{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
- .btn-group button {
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+/* -------perfil-----------*/
+.foto_user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  } 
+
+.container_des .descricao p{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+.descricao h7{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background-size: 100px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+/* ----------- publicar ---------- 
+  .publicar{
+    float: right;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 1050px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  }
+
+  .publicar img{
+    width: 30px;
+    height: 30px;
+  }
+
+.publicar .sub_pub{
+  background-color: white;
+    color: rgb(0, 195, 255);
+    border: 1.5px solid rgb(0, 195, 255);
+    border-radius: 15px;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+
+-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* ----------- em alta ---------- */
+  .btn-group button {
     background-color: white; 
     border: 1px solid rgb(177, 177, 177); 
     color: black; 
@@ -171,6 +356,7 @@ body{
     border-radius: 30px;
     font-size: 15px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .btn-group button:hover{
@@ -181,6 +367,67 @@ body{
     text-align: center;
     height: 100%;
     margin: 10px;
+}
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+/* -------- galerias --------- */
+div.gallery {
+  float: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+  
+div.gallery:hover {
+  border: 1px solid rgb(0, 163, 238);
+}
+  
+div.gallery img {
+  float: right;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+div.gallery button{
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border-radius: 30px;
+  width: 50px;
+  height: 30px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
 }
 
 .container_gallery{
@@ -201,49 +448,8 @@ body{
     clear: both;
     display: table;  
   }
-  
-div.gallery {
-    float: center;
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 300px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-  }
-    
-div.gallery:hover {
-    border: 1px solid rgb(0, 163, 238);
-  }
-    
-div.gallery img {
-    float: right;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-  
-div.desc {
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-div.gallery button{
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border-radius: 30px;
-    width: 50px;
-    height: 30px;
-    font-size: 13px;
-    border: none;
-  }
 
-a .btn-topicos{
-    text-decoration: none;
-    color: white;
-  }
+
 
 div.gallery .btn_heart{
     background-color: white;
@@ -254,6 +460,7 @@ div.gallery .btn_heart{
     font-size: 15px;
     border: none;
     border: 1px solid rgb(161, 161, 161);
+    cursor: pointer;
   }
 
 div.gallery button:hover{
@@ -286,14 +493,59 @@ div.img_artist img {
     height: 100%;
     border-radius: 5px;
   }
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* ----------- produto ---------- */
+  .gallery_artist{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: center;
+    margin-top: 200px;
+    height: 550px;
+  }
+
+.gallery_artist .img_artist img{
+  width: 330px;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+}
 
 div.gallery_artist .first_div{
     margin: 20px;
-    float: left;
+    float: center;
   }
 
 div.gallery_artist .descr_artist1 img{
-    width: 35px;
+    width: 40px;
+    float: left;
+  }
+
+  div.gallery_artist .descr_artist1 button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     float: left;
   }
 
@@ -314,6 +566,7 @@ div.gallery_artist .descr_artist3 button{
     height: 30px;
     font-size: 16px;
     margin: 20px;
+    cursor: pointer;
   }
 
 div.gallery_artist .descr_artist4 p{
@@ -327,20 +580,321 @@ div.gallery_artist .descr_artist4 img{
     width: 80px;
     height: 120px;
   }
-   
+/* --------------------------*/
 
 
 
-.fildset{
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* ----------- doação --------- */
+
+.container_doacao {
+    background-color: #e6edee;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+    height: 550px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     float: center;
-    border: solid 1px #777;
-    border-radius: 30px;
+    margin-top: 200px;
+}
+  
+  
+  .container_doacao .input_submit{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 163, 238);
+    color: white;
+    font-size: 20px;
   }
 
-.label{
-    border-radius: 30px;
+  input[type=text], textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .container_doacao .div_payment{
+    padding: 20px;
+  }
+  
+  .container_doacao .div_payment .div_sub{
+    height: 100px;
+  }
+  
+.container_des{
+   display: block;
+   float: center;
+   font-size: 20px;
+   height: 20px;
+  }
+  
+.symbol {
+   display: block;
+   position: relative;
+   font-size: 2.6rem;
+   line-height: 3rem;
+  }
+    
+.input_preco[data] {
+   border: 0;
+   text-align: center;
+   font-size: 3rem;
+   width: 100%;
+   height: 3rem;
+   line-height: 3rem;
+   padding: 0;
+  }
+    
+input[type=number]{
+   border-radius: 4px;
+   border: 1px solid #e3e8eb;
+   box-shadow: none;
+   height: 40px;
+   font-size: 14px;
+   padding: 16px 12px;
+   background: #fff;
+   margin: 0;
+   display: inline-block;
+   vertical-align: middle;
+   font-family: Roboto,sans-serif!important;
+   color: #4f5e65;
+  }
+    
+.valor_doacao-input__btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+    
+.valor_doacao-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    
+.valor_doacao-input__btn .btn_rs button{
+    border: none;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(177, 177, 177);
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* ----------cadastro e login -----------*/
+  .cad{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 500px;
+    font-size: 20px;
+   }
+   
+   .form_login button/*.submit*/{
+      text-align: center;
+      width: 100%;
+      height: 35px;
+      color: white;
+      background-color: rgb(0, 163, 238);
+      border: none;
+      font-size: 20px;
+      margin-bottom: 10px;
+   }
+   
+  .tologin{
+     text-align: center;
+  
+   }
+   
+   .form_login .tbl input {
+     width: 100%;
+     height: 40px;
+     border: 2px solid lightgray;
+   }
+
+   .form_login input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid lightgray;
   }
 
+  .form_cad .submit{
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: rgb(0, 163, 238);
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+
+  .form_cad .tbl input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid lightgray;
+  }
+
+  .form_cad input {
+   width: 100%;
+   height: 40px;
+   border: 2px solid lightgray;
+ }
+
+ .form_cad .gender {
+  width: 30px;
+  height: 10px;
+  border: 2px solid lightgray;
+}
+
+   .right{
+     float:center;
+   }
+   
+    .left{
+      float: left;
+    }
+
+.face{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+    padding-top: 50px;
+    
+    }
+    
+    .imgprofile{
+      vertical-align: middle;
+      width: 50px;
+    }
+/* --------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+/*----------quem_somos-------*/
+.title{
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  margin-top: 200px;
+  float: center;
+  width: 150px;
+}
+.quem_somos{
+  background-color: rgb(0, 195, 255);
+  color: white;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 700px;
+  padding: 25px;
+}
+
+.img_qm{
+  float: center;
+  width: 406px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+/* ----------- footer ----------- */ 
 .footer button{
     background-color: rgb(0, 195, 255);
     color: white;
@@ -350,6 +904,7 @@ div.gallery_artist .descr_artist4 img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border: none;
+    cursor: pointer;
   }
 
 .footer {
@@ -362,6 +917,16 @@ div.gallery_artist .descr_artist4 img{
     height: 100%;
     border-radius: 7px;
   }
+/* --------------------------*/
+
+
+
+
+
+
+   
+
+
 
 
 
